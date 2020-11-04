@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import { Canvas, extend } from 'react-three-fiber';
+import Box from './box';
+import { OrbitControls } from '@react-three/drei';
+import { useRef, useState } from 'react';
+import Dragable from './Dragable';
 
-function App() {
+
+const App = () => {
+  const orbitControls = useRef();
+  const dragControls = useRef();
+  const [orbitEnabled, setOrbitEnabled] = useState(true);
+
+  // useEffect(() => {
+  //   const current = orbitControls.current
+  //   if (current) {
+  //     console.log(current)
+  //     current.enabled = orbitEnabled;
+  //   }
+  // }, [orbitEnabled]);
+
+  const addDragableObject = object => {
+    console.log(dragControls.current)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Canvas >
+      <pointLight position={[10,10,10]} />
+      <ambientLight />
+      <Dragable ref={dragControls}/>
+      <OrbitControls enabled={orbitEnabled}/>
+      <Box position={[1,1,1]} setOrbitEnabled={setOrbitEnabled} addDragableObject={addDragableObject}/>
+      <Box setOrbitEnabled={setOrbitEnabled} addDragableObject={addDragableObject}/>
+    </Canvas>
   );
-}
+};
 
 export default App;
