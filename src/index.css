@@ -9,3 +9,51 @@ html * {
   height: 100vh;
   background:black;
 }
+
+.h-screen {
+  height: 100vh;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-full {
+  width: 100%
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.z-2 {
+  z-index: 2;
+}
+
+.pointer:hover {
+  cursor: pointer;
+}
+
+.p-10 {
+  padding: 10px;
+}
