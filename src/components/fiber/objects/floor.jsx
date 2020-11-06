@@ -6,7 +6,11 @@ const Floor = (props) => {
     const texture = useLoader(THREE.TextureLoader, './tile.jpg')
     return (
         <mesh receiveShadow castShadow {...props}>
-            <meshPhysicalMaterial map={texture} clearcoat={1} reflectivity={1}/>
+            <meshPhysicalMaterial 
+                // map={texture} 
+                clearcoat={1} 
+                reflectivity={1}
+            />
             <boxBufferGeometry args={[20,1,20]} />
         </mesh>
     );

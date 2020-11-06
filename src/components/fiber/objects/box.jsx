@@ -22,6 +22,10 @@ const Box = (props) => {
     const handlePointerDown = e => {
         const current = mesh.current;
         current.falling = false;
+        if (window.activeMesh) 
+            window.activeMesh.material.color = new THREE.Color('white')
+        current.material.color = new THREE.Color('blue');
+        window.activeMesh = current;
     }
 
     const handlePointerUp = e => {
