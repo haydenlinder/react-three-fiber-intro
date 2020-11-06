@@ -3,9 +3,7 @@
 
 ## 1. Getting Started
 * **What is react-three-fiber?**
-  * react-three-fiber https://github.com/pmndrs/react-three-fiber
-    * react-three-fiber is a React renderer for three js on the web and react-native
-  * THREE.js https://threejs.org/
+  * [react-three-fiber](https://github.com/pmndrs/react-three-fiber) is a React renderer for [threejs](https://threejs.org/) on the web and react-native
   * Use-cases:
     * Rendering graphics in the browser or with React or React Native
     * Gives more semantic layout and assumes reasonable defaults, making it easy to get up and running quickly.
