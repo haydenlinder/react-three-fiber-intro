@@ -51,23 +51,27 @@ credit: [Three.js Fundamentals](https://threejsfundamentals.org/threejs/lessons/
   * texture
 
 * **Geometry**
-	- Geometry primitives
-	- Custom geometry
+	* Geometry primitives
+	* Custom geometry
+
 * **Mesh**
-	- Show use of materials and geometry objects as mesh
-	- You can use examples from previous sections and show how they can be used in a mesh
-Texture
-	- Load cube or sphere with a custom image from file using textures
-	- Discuss how you can use a 2d canvas or render from another scene.
-Events 
-	- Reacting to pointer events
-Controls
-	- Orbitcontrols
-	- Dragcontrols
-	- extend
-Physics
-	- manual, react-spring, or similar
-Putting it all together
-	- Show the final product as a whole working as a react app in browser
-	- Discuss what other things students can try on their own
-	- Briefly touch other advanced topics they can look into to get even better understanding
+	* Show use of materials and geometry objects as mesh
+	* You can use examples from previous sections and show how they can be used in a mesh
+
+* **Texture**
+	* Load cube or sphere with a custom image from file using textures
+	* Discuss how you can use a 2d canvas or render from another scene.
+
+* **Controls**
+	* Dragcontrols
+	* extend
+    * events
+
+* **Physics**
+	* manual, 
+    * react-spring, or similar
+
+* **Putting it all together**
+	* Discuss what other things students can try on their own
+      * Using Assets
+	* Briefly touch other advanced topics they can look into to get even better understanding
