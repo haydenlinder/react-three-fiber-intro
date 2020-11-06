@@ -19,12 +19,12 @@
   ```bash
     npm install three react-three-fiber
   ```
-  * create-react-app https://reactjs.org/docs/create-a-new-react-app.html
+  * Create React app https://reactjs.org/docs/create-a-new-react-app.html
   ```bash
-    npx create-react-app my-app
-    cd my-app
+    npx create-react-app react-three-fiber-introduction
+    cd react-three-fiber-introduction
     npm start
   ```
-* Item 2
-  * Item 2a
-  * Item 2b
+* **Assets**
+  * Bacic [CSS](https://github.com/haydenlinder/react-three-fiber-intro/blob/main/src/index.css)
+  * Assets from [sketchfab](https://sketchfab.com/)
