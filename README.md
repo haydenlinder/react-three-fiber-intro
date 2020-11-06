@@ -40,6 +40,7 @@ credit: [Three.js Fundamentals](https://threejsfundamentals.org/threejs/lessons/
   * Orbit controls
     * extend
   * floor
+  * Lights
   * Pointlight helper
   * background
   * material choices, 
@@ -49,25 +50,15 @@ credit: [Three.js Fundamentals](https://threejsfundamentals.org/threejs/lessons/
     * performance pitfalls
   * texture
 
-
-Geometry
+* **Geometry**
 	- Geometry primitives
-	- You can use one example like sphere or cube 
 	- Custom geometry
-Mesh
+* **Mesh**
 	- Show use of materials and geometry objects as mesh
 	- You can use examples from previous sections and show how they can be used in a mesh
-    -  useThree(), useFrame(() => {}), animation
-	- Performance pitfalls
 Texture
 	- Load cube or sphere with a custom image from file using textures
 	- Discuss how you can use a 2d canvas or render from another scene.
-Lighting
-	- Ambient light
-	- Hemisphere Light
-	- Directional Light
-	- Point light
-	- Spot light
 Events 
 	- Reacting to pointer events
 Controls
