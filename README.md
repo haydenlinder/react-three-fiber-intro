@@ -2,6 +2,8 @@
 Outline:
 
 ## 1. Getting Started
+![Preview](/publuc/getting_started.png)
+
 * **What is react-three-fiber?**
   * react-three-fiber https://github.com/pmndrs/react-three-fiber
     * react-three-fiber is a React renderer for three js on the web and react-native
