@@ -2,7 +2,7 @@
 Outline:
 
 ## 1. Getting Started
-![Preview](/publuc/getting_started.png)
+![Preview](/public/getting_started.png)
 
 * **What is react-three-fiber?**
   * react-three-fiber https://github.com/pmndrs/react-three-fiber
