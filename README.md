@@ -2,6 +2,7 @@
 ![Preview](/public/getting_started.png)
 
 ## 1. Setup
+
 * **What is react-three-fiber?**
   * [react-three-fiber](https://github.com/pmndrs/react-three-fiber) is a React renderer for [threejs](https://threejs.org/) on the web and react-native
   * Use-cases:
@@ -27,3 +28,7 @@
   * Bacic [CSS](https://github.com/haydenlinder/react-three-fiber-intro/blob/main/src/index.css)
   * Assets from [sketchfab](https://sketchfab.com/)
 
+## 2. Setting the Scene
+
+* **The Scene Graph**
+![Photo of Scene Graph](https://threejsfundamentals.org/threejs/lessons/resources/images/threejs-structure.svg)
