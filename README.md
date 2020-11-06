@@ -1,7 +1,7 @@
 # Introduction to React Three Fiber
 ![Preview](/public/getting_started.png)
 
-## 1. Getting Started
+## 1. Setup
 * **What is react-three-fiber?**
   * [react-three-fiber](https://github.com/pmndrs/react-three-fiber) is a React renderer for [threejs](https://threejs.org/) on the web and react-native
   * Use-cases:
@@ -17,7 +17,7 @@
   ```bash
     npm install three react-three-fiber
   ```
-  * Create React app https://reactjs.org/docs/create-a-new-react-app.html
+  * [Create React app](https://reactjs.org/docs/create-a-new-react-app.html)
   ```bash
     npx create-react-app react-three-fiber-introduction
     cd react-three-fiber-introduction
@@ -26,3 +26,4 @@
 * **Assets**
   * Bacic [CSS](https://github.com/haydenlinder/react-three-fiber-intro/blob/main/src/index.css)
   * Assets from [sketchfab](https://sketchfab.com/)
+
