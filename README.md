@@ -49,15 +49,13 @@ credit: [Three.js Fundamentals](https://threejsfundamentals.org/threejs/lessons/
     * performance pitfalls
   * texture
 
+## 4. Custom Shapes
+
 * **Geometry**
 	* Geometry primitives
 	* Custom geometry
 
-* **Mesh**
-	* Show use of materials and geometry objects as mesh
-	* You can use examples from previous sections and show how they can be used in a mesh
-
-## 3. Interaction
+## 5. Interaction
 
 * **Controls**
   * Orbit controls
@@ -69,7 +67,7 @@ credit: [Three.js Fundamentals](https://threejsfundamentals.org/threejs/lessons/
 	* manual, 
   * react-spring, or similar
 
-## 4. Putting it all together
+## 6. Putting it all together
 
 * Discuss what other things students can try on their own
   * Using Assets
