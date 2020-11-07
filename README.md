@@ -37,8 +37,6 @@ credit: [Three.js Fundamentals](https://threejsfundamentals.org/threejs/lessons/
 * **Setting the Scene**
   * Canvas
   * axes helper 
-  * Orbit controls
-    * extend
   * floor
   * Lights
     * Pointlight helper
@@ -59,20 +57,20 @@ credit: [Three.js Fundamentals](https://threejsfundamentals.org/threejs/lessons/
 	* Show use of materials and geometry objects as mesh
 	* You can use examples from previous sections and show how they can be used in a mesh
 
-* **Texture**
-	* Load cube or sphere with a custom image from file using textures
-	* Discuss how you can use a 2d canvas or render from another scene.
+## 3. Interaction
 
 * **Controls**
+  * Orbit controls
+    * extend
+  * Events
 	* Dragcontrols
-	* extend
-    * events
 
 * **Physics**
 	* manual, 
-    * react-spring, or similar
+  * react-spring, or similar
 
-* **Putting it all together**
-	* Discuss what other things students can try on their own
-    * Using Assets
-    * Soft-shadows
+## 4. **Putting it all together**
+
+* Discuss what other things students can try on their own
+  * Using Assets
+  * Soft-shadows
