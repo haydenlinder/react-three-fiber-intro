@@ -69,7 +69,7 @@ credit: [Three.js Fundamentals](https://threejsfundamentals.org/threejs/lessons/
 	* manual, 
   * react-spring, or similar
 
-## 4. **Putting it all together**
+## 4. Putting it all together
 
 * Discuss what other things students can try on their own
   * Using Assets
