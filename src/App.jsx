@@ -3,7 +3,7 @@ import Fiber from './components/fiber/fiber';
 
 const App = () => {
   return (
-    <div className='flex h-screen w-screen'>
+    <div className='h-screen w-screen relative'>
       <Controls />
       <Fiber />
     </div>

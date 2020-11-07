@@ -41,8 +41,9 @@ credit: [Three.js Fundamentals](https://threejsfundamentals.org/threejs/lessons/
     * extend
   * floor
   * Lights
-  * Pointlight helper
+    * Pointlight helper
   * background
+    * Loaders
   * material choices, 
     * color, opacity, emissive, transmissive, metal, reflective, clearcoat
   * animation
@@ -73,5 +74,5 @@ credit: [Three.js Fundamentals](https://threejsfundamentals.org/threejs/lessons/
 
 * **Putting it all together**
 	* Discuss what other things students can try on their own
-      * Using Assets
-	* Briefly touch other advanced topics they can look into to get even better understanding
+    * Using Assets
+    * Soft-shadows

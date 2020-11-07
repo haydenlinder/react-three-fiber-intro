@@ -11,7 +11,7 @@ const Floor = (props) => {
                 clearcoat={1} 
                 reflectivity={1}
             />
-            <boxBufferGeometry args={[20,1,20]} />
+            <boxBufferGeometry args={[40,1,20]} />
         </mesh>
     );
 };

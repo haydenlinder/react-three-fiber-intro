@@ -57,3 +57,39 @@ html * {
 .p-10 {
   padding: 10px;
 }
+
+.bg-black {
+  background: black;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.top-50 {
+  top: 50vh;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.w-200 {
+  width: 200px;
+}
+
+.fit-content {
+  width: fit-content;
+}
+
+.top-70 {
+  top: 70vh;
+}
+
+.justify-between {
+  justify-content: space-between;
+}

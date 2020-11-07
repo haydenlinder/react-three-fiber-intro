@@ -3,14 +3,14 @@ import { extend, useThree } from 'react-three-fiber';
 import { DragControls } from 'three/examples/jsm/controls/DragControls';
 extend({ DragControls });
 
-const Dragable = ({groupName, children}) => {
+const Dragable = (props) => {
     const [childRefs, setChildRefs] = useState([]);
     const config = useThree();
     const { camera, gl } = config;
     const controls = useRef();
 
     useEffect(() => {
-        const newRefs = config.scene.getObjectByName(groupName).children;
+        const newRefs = config.scene.getObjectByName(props.groupName).children;
         setChildRefs(newRefs);
     }, []);
     
@@ -21,6 +21,13 @@ const Dragable = ({groupName, children}) => {
             current.addEventListener('hoveroff', e => setOrbitEnabled(true));
             current.addEventListener('dragend', e => setOrbitEnabled(false));
             current.addEventListener('dragstart', e => setOrbitEnabled(false));
+            current.addEventListener('dragstart', e => {
+                if (e.object.type === 'Mesh') {
+                    window.activeMesh = e.object;
+                    console.log('active: ', e.object)
+                }
+                console.log(e)
+            });
         }
     }, [childRefs]);
 
@@ -29,9 +36,9 @@ const Dragable = ({groupName, children}) => {
     };
 
     return (
-        <group name={groupName}>
-            <dragControls args={[childRefs, camera, gl.domElement]} ref={controls}/>
-            {children}
+        <group name={props.groupName} position={props.position}>
+            <dragControls args={[childRefs, camera, gl.domElement]} ref={controls} transformGroup={props.transformGroup}/>
+            {props.children}
         </group>
     );
 };
