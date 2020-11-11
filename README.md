@@ -37,7 +37,10 @@ credit: [Three.js Fundamentals](https://threejsfundamentals.org/threejs/lessons/
 * **Setting the Scene**
   * Canvas
   * axes helper 
-  * floor
+  * Geometry
+    * Geometry primitives
+    * Lines
+    * Custom geometry
   * Lights
     * Pointlight helper
   * background
@@ -46,16 +49,11 @@ credit: [Three.js Fundamentals](https://threejsfundamentals.org/threejs/lessons/
     * color, opacity, emissive, transmissive, metal, reflective, clearcoat
   * animation
     * useThree(), useFrame(() => {}), camera, render, 
+    * frame rates
     * performance pitfalls
   * texture
 
-## 4. Custom Shapes
-
-* **Geometry**
-	* Geometry primitives
-	* Custom geometry
-
-## 5. Interaction
+## 3. Interaction and Physics
 
 * **Controls**
   * Orbit controls
@@ -65,9 +63,9 @@ credit: [Three.js Fundamentals](https://threejsfundamentals.org/threejs/lessons/
 
 * **Physics**
 	* manual, 
-  * react-spring, or similar
+  * react-spring, usecanon, or similar
 
-## 6. Putting it all together
+## 4. Putting it all together
 
 * Discuss what other things students can try on their own
   * Using Assets

@@ -8,13 +8,17 @@ const Model = (props) => {
     const { scene } = useThree();
 
     useEffect(() => {
-        new GLTFLoader().loadAsync(props.path)
+        const loader = new GLTFLoader().loadAsync(props.path)
         .then(gltf => {
             const car = gltf.scene
+            console.log(car)
             car.scale.x = props.scale;
             car.scale.y = props.scale;
             car.scale.z = props.scale;
             scene.getObjectByName(props.groupName).add(car)
+        })
+        .catch(e => {
+            console.log(e)
         })
     }, [])
 
