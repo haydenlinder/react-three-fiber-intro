@@ -70,3 +70,4 @@ credit: [Three.js Fundamentals](https://threejsfundamentals.org/threejs/lessons/
 * Discuss what other things students can try on their own
   * Using Assets
   * Soft-shadows
+  * postprocessing
