@@ -1,35 +1,29 @@
 import { useFrame } from 'react-three-fiber';
 import { Vector3 } from 'three'
-import * as THREE from 'three'
 
 const Portal = () => {
-    const cx1 = 0;
-    const cx2 = -20;
+    const set1x = 0;
+    const set2x = -20;
     const offset = 3;
+    const dt = 0.5
     useFrame((state) => {
-        const { camera, scene, clock } = state;
         window.state = state
-        window.THREE = THREE
-        const dt = 50000*clock.getDelta();
-        const orbit = scene.__objects[0]
-        const { x,y,z } = orbit.target
+        const { camera, scene } = state;
+        const controls = scene.__objects[0]
+        const { x,y,z } = controls.target
         const cx  = camera.position.x
-        if (window.set === 1 && cx > cx2+offset) {
-            const newcx = Math.max(cx - dt, cx2+offset)
-            const newox = Math.max(x - 2*dt, cx2)
-            camera.position.x = newcx
-            orbit.target = new Vector3(newox, y, z)
-            orbit.update();
-        } else if (window.set === 2 && cx < cx1+offset) {
-            const newcx = Math.min(cx + dt, cx1+offset)
-            const newox = Math.min(x + 2*dt, cx1)
-            camera.position.x = newcx
-            orbit.target = new Vector3(newox, y, z)
-            orbit.update();
+        if (window.set === 1 && cx > set2x+offset) {
+            camera.position.x = Math.max(cx - dt, set2x+offset)
+            controls.target = new Vector3(Math.max(x - 2 * dt, set2x), y, z)
+        } else if (window.set === 2 && cx < set1x+offset) {
+            camera.position.x = Math.min(cx + dt, set1x + offset)
+            controls.target = new Vector3(Math.min(x + 2 * dt, set1x), y, z)
         } else {
             window.set = null;
         }
+        controls.update();
     })
+
     return null
 };
 

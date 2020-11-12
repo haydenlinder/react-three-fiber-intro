@@ -48,26 +48,25 @@ credit: [Three.js Fundamentals](https://threejsfundamentals.org/threejs/lessons/
   * material choices, 
     * color, opacity, emissive, transmissive, metal, reflective, clearcoat
   * animation
-    * useThree(), useFrame(() => {}), camera, render, 
-    * frame rates
+    * useThree(), useFrame(() => {}), camera
+    * frame rates and smooth rendering
     * performance pitfalls
   * texture
 
 ## 3. Interaction and Physics
 
 * **Controls**
+  * extend
   * Orbit controls
-    * extend
   * Events
 	* Dragcontrols
 
 * **Physics**
-	* manual, 
-  * react-spring, usecanon, or similar
+  * use-cannon https://github.com/pmndrs/use-cannon
 
 ## 4. Putting it all together
 
-* Discuss what other things students can try on their own
+* Other things students can try on their own
   * Using Assets
   * Soft-shadows
   * postprocessing

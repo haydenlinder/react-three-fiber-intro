@@ -1,11 +1,10 @@
 import React from 'react';
-import { useLoader } from 'react-three-fiber';
-import * as THREE from 'three';
+import { useBox } from 'use-cannon';
 
 const Floor = (props) => {
-    const texture = useLoader(THREE.TextureLoader, './tile.jpg')
+    const [ref] = useBox(() => ({ args: [40, 1, 20], ...props }))
     return (
-        <mesh receiveShadow castShadow {...props}>
+        <mesh receiveShadow castShadow ref={ref}>
             <meshPhysicalMaterial 
                 // map={texture} 
                 clearcoat={1} 
