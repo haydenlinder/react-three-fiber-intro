@@ -1,14 +1,12 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import * as THREE from 'three';
 
 const Controls = () => {
-    useEffect(() => {
-        window.state?.scene && toggleSet(2);
-    }, [window.state]);
 
     const toggleColor = e => {
         e.preventDefault();
-        const mesh = window.activeMesh;
+        const mesh = window.activeMesh || window.state.scene.getObjectByName("Capot001_CAR_PAINT_0");
+        if (!mesh) return;
         mesh.material.color = new THREE.Color(e.target.style.background)
     };
 

@@ -1,4 +1,5 @@
 import { useFrame } from 'react-three-fiber';
+import { useEffect } from 'react';
 import { Vector3 } from 'three'
 
 const Portal = () => {
@@ -6,6 +7,7 @@ const Portal = () => {
     const set2x = -20;
     const offset = 3;
     const dt = 0.5
+
     useFrame((state) => {
         window.state = state
         const { camera, scene } = state;
