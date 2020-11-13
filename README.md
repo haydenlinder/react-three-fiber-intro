@@ -16,14 +16,14 @@
 
 * **Environment**
   * [Node](https://nodejs.org/) >= v8.10 and [npm](https://www.npmjs.com/) >= v5.6
-  * Install three and react-three-fiber
-  ```bash
-    npm install three react-three-fiber use-cannon
-  ```
   * [Create React app](https://reactjs.org/docs/create-a-new-react-app.html)
   ```bash
     npx create-react-app react-three-fiber-introduction
     cd react-three-fiber-introduction
+  ```
+  * Install three and react-three-fiber and start the app.
+  ```bash
+    npm install three react-three-fiber use-cannon
     npm start
   ```
   * Versions used in this project:
