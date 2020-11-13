@@ -4,10 +4,12 @@
 ## 1. Setup
 
 * **What is react-three-fiber?**
-  * [react-three-fiber](https://github.com/pmndrs/react-three-fiber) is a React renderer for [threejs](https://threejs.org/) on the web and react-native
+  * [react-three-fiber](https://github.com/pmndrs/react-three-fiber) is a React renderer for [threejs](https://threejs.org/) on the web and react-native*.
+    * Gives more semantic layout and assumes reasonable defaults, making it easy to get up and running quickly with less code.
   * Use-cases:
-    * Rendering graphics in the browser or with React or React Native
-    * Gives more semantic layout and assumes reasonable defaults, making it easy to get up and running quickly.
+    * Rendering graphics in the browser with React or on mobile and web with React Native*.
+
+*Limited documentation on react-native see https://github.com/pmndrs/react-three-fiber/blob/master/markdown/recipes.md#usage-with-react-native.
 
 * **Prerequisites**
   * React, JavaScript, HTML, CSS
@@ -25,33 +27,30 @@
     npm start
   ```
 * **Assets**
-  * Bacic [CSS](https://github.com/haydenlinder/react-three-fiber-intro/blob/main/src/index.css)
-  * Assets from [sketchfab](https://sketchfab.com/)
+  * .gltf files from [sketchfab](https://sketchfab.com/).
 
-* **The Scene Graph**
-![Photo of Scene Graph](https://threejsfundamentals.org/threejs/lessons/resources/images/threejs-structure.svg)
-credit: [Three.js Fundamentals](https://threejsfundamentals.org/threejs/lessons/threejs-fundamentals.html)
 
 ## 2. Getting Started
 
 * **Setting the Scene**
-  * Canvas
-  * axes helper 
-  * Geometry
-    * Geometry primitives
-    * Lines
-    * Custom geometry
+  * [The scene graph](https://threejsfundamentals.org/threejs/lessons/threejs-fundamentals.html).
+  * Manual setup with [threejs](https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene).
+  * [Canvas](https://github.com/pmndrs/react-three-fiber/blob/master/markdown/api.md#canvas)
+  * [AxesHelper](https://threejs.org/docs/index.html#api/en/helpers/AxesHelper)
+  * [Geometry](https://threejs.org/docs/index.html#api/en/core/Geometry)
+  * [Lines](https://threejs.org/docs/index.html#manual/en/introduction/Drawing-lines)
   * Lights
-    * Pointlight helper
-  * background
-    * Loaders
-  * material choices, 
-    * color, opacity, emissive, transmissive, metal, reflective, clearcoat
-  * animation
+    * [Ambient Light](https://threejs.org/docs/index.html#api/en/lights/AmbientLight)
+    * [Pointlight helper](https://threejs.org/docs/index.html#api/en/helpers/PointLightHelper)
+  * [Material/Mesh]
+    * Light sensitivity, color, texture, opacity, emissive, transmissive, metal, reflective, clearcoat
+  * [background](https://threejsfundamentals.org/threejs/lessons/threejs-backgrounds.html)
+    * [Scene.background](https://threejs.org/docs/index.html#api/en/scenes/Scene.background)
+    * [CubeTextureLoader](https://threejs.org/docs/index.html#api/en/loaders/CubeTextureLoader)
+    * [WebGLCubeRenderTarget.fromEquirectangularTexture](https://threejs.org/docs/index.html#api/en/renderers/WebGLCubeRenderTarget.fromEquirectangularTexture)
+  * [animation](https://github.com/pmndrs/react-three-fiber/blob/master/markdown/api.md#hooks)
     * useThree(), useFrame(() => {}), camera
-    * frame rates and smooth rendering
-    * performance pitfalls
-  * texture
+    * [performance pitfalls](https://github.com/pmndrs/react-three-fiber/blob/master/markdown/pitfalls.md)
 
 ## 3. Interaction and Physics
 
