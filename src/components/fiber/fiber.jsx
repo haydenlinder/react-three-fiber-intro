@@ -30,6 +30,7 @@ const Fiber = () => {
                             path='/tesla_model_3/scene.gltf' 
                             position={[0,1,0]} 
                             scale={new Array(3).fill(0.01)}
+                            label='Model 3'
                         />
                     </Dragable>
                 </Suspense>
@@ -39,6 +40,7 @@ const Fiber = () => {
                             path='/tesla_model_s/scene.gltf' 
                             position={[-20,1,0]} 
                             scale={new Array(3).fill(0.013)}
+                            label='Model S'
                         />
                     </Dragable>
                 </Suspense>

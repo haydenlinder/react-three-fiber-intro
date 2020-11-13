@@ -44,11 +44,11 @@ const Controls = () => {
                 ></a>
             </div>
             <button 
-                style={{position:'absolute', top: '70vh', width: '30px', height: '30px', cursor: 'pointer', left:0, borderRadius: '100%'}}
+                style={{position:'absolute', top: '70vh', width: '30px', height: '30px', cursor: 'pointer', left:0, borderRadius: '100%', border: '1px solid black', background: 'rgb(255,255,255, 0.7)'}}
                 onClick={e => toggleSet(1)}
             >{'<'}</button>
             <button 
-                style={{position:'absolute', top: '70vh', width: '30px', height: '30px', cursor: 'pointer', right:0, borderRadius: '100%'}}
+                style={{position:'absolute', top: '70vh', width: '30px', height: '30px', cursor: 'pointer', right:0, borderRadius: '100%', border: '1px solid black', background: 'rgb(255,255,255, 0.7)'}}
                 onClick={e => toggleSet(2)}
             >{'>'}</button>
 
